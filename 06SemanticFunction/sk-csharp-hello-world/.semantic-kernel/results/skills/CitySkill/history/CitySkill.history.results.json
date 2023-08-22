@@ -1,0 +1,105 @@
+{
+    "version": "1.0",
+    "skillName": "CitySkill",
+    "functionName": "history",
+    "description": "Find the city or location",
+    "filePath": "skills\\CitySkill\\history\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://botgpttest.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 50,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": " I am travelliong to chennai this month end"
+                }
+            ],
+            "output": {
+                "prompt": "Locate the city or loation name within the provided text :  I am travelliong to chennai this month end\r\nand provide the city's name along with a brief history, limited to two line,in JSON format like this:\r\n\r\nexample\r\n{\r\n    \"cityname\": \"CityNameHere\",\r\n    \"history\": \"Brief history of the city.\"\r\n}\r\n```",
+                "durationInMilliseconds": 3473.1346,
+                "inputTokens": 85,
+                "outputTokens": 50,
+                "result": "\n{\n    \"cityname\": \"Chennai\",\n    \"history\": \"Chennai is the capital of the Indian state of Tamil Nadu. It is one of the largest cultural, economic and educational centres of south India.\"\n",
+                "textCompletionResult": "\n{\n    \"cityname\": \"Chennai\",\n    \"history\": \"Chennai is the capital of the Indian state of Tamil Nadu. It is one of the largest cultural, economic and educational centres of south India.\"\n"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://botgpttest.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 50,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "I am travelliong to chennai this month end"
+                }
+            ],
+            "output": {
+                "prompt": "Locate the city or loation name within the provided text : I am travelliong to chennai this month end\r\nand provide the city's name along with a brief history, limited to two lines",
+                "durationInMilliseconds": 2756.0479,
+                "inputTokens": 43,
+                "outputTokens": 39,
+                "result": "\n\nChennai is the capital of the Indian state of Tamil Nadu. It is one of the oldest cities in India, with a recorded history dating back to the 1st century BC.",
+                "textCompletionResult": "\n\nChennai is the capital of the Indian state of Tamil Nadu. It is one of the oldest cities in India, with a recorded history dating back to the 1st century BC."
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "text-davinci-003",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "text-davinci-003",
+                "endpoint": "https://botgpttest.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 50,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "I am travelliong to chennai this month end"
+                }
+            ],
+            "output": {
+                "prompt": "Locate the city or loation name within the provided text : I am travelliong to chennai this month end",
+                "durationInMilliseconds": 1641.8061,
+                "inputTokens": 26,
+                "outputTokens": 5,
+                "result": "\n\nChennai",
+                "textCompletionResult": "\n\nChennai"
+            }
+        }
+    ]
+}

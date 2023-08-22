@@ -1,0 +1,344 @@
+{
+    "version": "1.0",
+    "skillName": "FunSkill",
+    "functionName": "CityLocation",
+    "description": "Find the city or location",
+    "filePath": "skills\\FunSkill\\CityLocation\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "planning to travel to chennai "
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text planning to travel to chennai ",
+                "durationInMilliseconds": 1433.6534,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "\n\nChennai",
+                "textCompletionResult": "\n\nChennai"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "Planning to travel to chennai in this month"
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text Planning to travel to chennai in this month",
+                "durationInMilliseconds": 1049.9023,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "Planning to travel to chennai in this month",
+                "textCompletionResult": "Planning to travel to chennai in this month"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "planning to travel to chennai this month"
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text planning to travel to chennai this month",
+                "durationInMilliseconds": 1549.3221,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "planning to travel to chennai this month",
+                "textCompletionResult": "planning to travel to chennai this month"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "I am planning travel to chennai"
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text I am planning travel to chennai",
+                "durationInMilliseconds": 935.5041,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "I am planning travel to chennai",
+                "textCompletionResult": "I am planning travel to chennai"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "how is weather in chennai , dou have any idea"
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text how is weather in chennai , dou have any idea",
+                "durationInMilliseconds": 929.9283,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "how is weather in chennai , dou have any idea",
+                "textCompletionResult": "how is weather in chennai , dou have any idea"
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$input}",
+                "durationInMilliseconds": 961.7393,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$input}",
+                "durationInMilliseconds": 987.7597,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$text}",
+                "durationInMilliseconds": 861.0042,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$text}",
+                "durationInMilliseconds": 1078.0332,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$text}",
+                "durationInMilliseconds": 979.7369,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$text}",
+                "durationInMilliseconds": 919.294,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        },
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [],
+            "output": {
+                "prompt": "Find the city name or location name of the following text {$text}",
+                "durationInMilliseconds": 1413.0696,
+                "inputTokens": null,
+                "outputTokens": null
+            }
+        }
+    ]
+}

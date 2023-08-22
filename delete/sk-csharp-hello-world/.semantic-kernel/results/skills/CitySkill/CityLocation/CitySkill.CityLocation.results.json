@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "skillName": "CitySkill",
+    "functionName": "CityLocation",
+    "description": "Find the city or location",
+    "filePath": "skills\\CitySkill\\CityLocation\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "davinici003Model",
+                "aiService": "AzureOpenAI",
+                "deploymentOrModelId": "davinici003Model",
+                "endpoint": "https://botgpttest.openai.azure.com/",
+                "useCustomEndpoint": false,
+                "endpointType": "text-completion"
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 100,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "I am planning to visit chennai end of this month."
+                }
+            ],
+            "output": {
+                "prompt": "Find the city name or location name of the following text I am planning to visit chennai end of this month.\r\nand return the cityname and history of the city or location.\r\n",
+                "durationInMilliseconds": 2723.9722,
+                "inputTokens": null,
+                "outputTokens": null,
+                "result": "\nCity Name: Chennai\n\nHistory of Chennai: Chennai, formerly known as Madras, is the capital of the Indian state of Tamil Nadu. It is the fourth-largest city in India and the sixth-largest urban agglomeration in the country. Chennai is located on the Coromandel Coast of the Bay of Bengal and is one of the most important cultural, economic, and educational centers in South India. It was founded in 1639 by the British East India Company and served as",
+                "textCompletionResult": "\nCity Name: Chennai\n\nHistory of Chennai: Chennai, formerly known as Madras, is the capital of the Indian state of Tamil Nadu. It is the fourth-largest city in India and the sixth-largest urban agglomeration in the country. Chennai is located on the Coromandel Coast of the Bay of Bengal and is one of the most important cultural, economic, and educational centers in South India. It was founded in 1639 by the British East India Company and served as"
+            }
+        }
+    ]
+}
