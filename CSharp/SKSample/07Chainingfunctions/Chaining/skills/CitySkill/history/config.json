@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "description": "Find the city or location",
+  "type": "completion",
+  "completion": {
+    "max_tokens": 50
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "input",
+        "description": "This input provided by user",
+        "defaultValue": ""
+      }      
+    ]
+  }
+}
