@@ -1,8 +1,0 @@
-Find the city name or location name of the following text {{$input}}
-and return the cityname and history of the city or location and histsorty not more than 2 lines in the JSON format 
-example 
-{
-    "cityname":"bangalore",
-    "history":"history of bangalore"
-}
-```
