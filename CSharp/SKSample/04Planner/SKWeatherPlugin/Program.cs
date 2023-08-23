@@ -14,7 +14,7 @@ namespace WeatherSKPlugin
             //Create a kernel builder
             var builder = new KernelBuilder();
 
-            builder.WithAzureTextCompletionService(Settings.DeploymentName, Settings.Endpoint, Settings.ApiKey);
+            builder.WithAzureTextCompletionService(ConfigParameters.DeploymentOrModelId, ConfigParameters.Endpoint, ConfigParameters.ApiKey);
             
             //Build the kernel
             var kernel = builder.Build();
@@ -26,7 +26,7 @@ namespace WeatherSKPlugin
                 var plugins = Path.Combine(Directory.GetCurrentDirectory(), "Plugins");
                 
                 var plugIn = kernel.ImportSemanticSkillFromDirectory(plugins, "History");
-                kernel.ImportSkill(new WeatherPlugin(Settings.WeatherApiKey), nameof(WeatherPlugin));
+                kernel.ImportSkill(new WeatherPlugin(ConfigParameters.WeatherApiKey), nameof(WeatherPlugin));
             
                 //Create a planner
 

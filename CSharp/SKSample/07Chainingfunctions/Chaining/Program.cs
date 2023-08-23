@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
+using skills.Json;
+using skills.Weather;
 
 var kernelSettings = KernelSettings.LoadSettings();
 
@@ -23,10 +25,18 @@ if (kernelSettings.EndpointType == EndpointTypes.TextCompletion)
     var skillsDirectory = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "skills");
     var skill = kernel.ImportSemanticSkillFromDirectory(skillsDirectory, "citySkill");
 
+    kernel.ImportSkill(new ExtractJson(), nameof(ExtractJson));
+    kernel.ImportSkill(new WeatherPlugIn(ConfigSettings.ConfigParameters.WeatherApiKey), nameof(WeatherPlugIn));
+
+
+    var jsonSkillFunc = kernel.Skills.GetFunction(nameof(ExtractJson), "ExtractInformation");
+    var weatherFunc = kernel.Skills.GetFunction(nameof(WeatherPlugIn), "GetWeatherAsync");
+
     var context = new ContextVariables();
     context.Set("input", "I plan to visit Paris");
 
-    var result = await kernel.RunAsync(context, skill["history"]);
+    var result = await kernel.RunAsync(context, skill["history"],jsonSkillFunc,weatherFunc);
+
     Console.WriteLine(result);
 }
 

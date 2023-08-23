@@ -13,7 +13,7 @@ namespace HelloWorld
             //1. Create Semantic Kernel Builder
 
             var builder = new KernelBuilder();
-            builder.WithAzureTextCompletionService(Settings.DeploymentName, Settings.Endpoint, Settings.ApiKey);
+            builder.WithAzureTextCompletionService(ConfigParameters.DeploymentOrModelId, ConfigParameters.Endpoint, ConfigParameters.ApiKey);
             var kernel = builder.Build();
 
             //2.Create Prompt Template 

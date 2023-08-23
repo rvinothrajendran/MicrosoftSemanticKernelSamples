@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Settings\ConfigSettings\ConfigSettings.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="config\appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -12,7 +12,7 @@ namespace SKWeatherPlugin
 
             var kernel = new KernelBuilder().Build();
 
-            var weatherPlugin = kernel.ImportSkill(new WeatherPlugin(Settings.WeatherApiKey), nameof(WeatherPlugin));
+            var weatherPlugin = kernel.ImportSkill(new WeatherPlugin(ConfigParameters.WeatherApiKey), nameof(WeatherPlugin));
 
             var report = await weatherPlugin["GetWeatherAsync"].InvokeAsync("chennai");
 

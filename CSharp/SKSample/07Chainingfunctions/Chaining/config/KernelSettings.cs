@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using ConfigSettings;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
@@ -37,6 +38,18 @@ internal class KernelSettings
     {
         try
         {
+            KernelSettings settings = new KernelSettings
+            {
+                ApiKey = ConfigParameters.ApiKey,
+                Endpoint = ConfigParameters.Endpoint,
+                DeploymentOrModelId = ConfigParameters.DeploymentOrModelId,
+                EndpointType = ConfigParameters.EndpointType,
+                ServiceType = ConfigParameters.ServiceType
+            };
+
+            return settings;
+
+
             if (File.Exists(DefaultConfigFile))
             {
                 return FromFile(DefaultConfigFile);
