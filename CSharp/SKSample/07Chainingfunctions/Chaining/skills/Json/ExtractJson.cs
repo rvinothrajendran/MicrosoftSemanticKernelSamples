@@ -8,25 +8,25 @@ namespace skills.Json;
 public class ExtractJson
 {
 
-    [SKFunction,Description("Extract information from the JSON")]
+    [SKFunction, Description("Extract information from the JSON")]
     public SKContext? ExtractInformation(SKContext? context)
     {
-        if(context == null)
+        if (context == null)
             throw new ArgumentNullException(nameof(context));
 
-JObject jsonJObject = JObject.Parse(context["input"]);
+        JObject jsonJObject = JObject.Parse(context["input"]);
 
-if (jsonJObject.TryGetValue("cityname", out var city))
-{
-    context["input"] = city.ToString();
-}
+        if (jsonJObject.TryGetValue("cityname", out var city))
+        {
+            context["input"] = city.ToString();
+        }
 
-if (jsonJObject.TryGetValue("history", out var histpory))
-{
-    context["history"] = histpory.ToString();
-}
+        if (jsonJObject.TryGetValue("history", out var histpory))
+        {
+            context["history"] = histpory.ToString();
+        }
 
-return context;
+        return context;
     }
-    
+
 }

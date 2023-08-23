@@ -401,3 +401,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/delete/sk-csharp-hello-world/config/appsettings.json
+/06SemanticFunction/sk-csharp-hello-world/config/appsettings.json
