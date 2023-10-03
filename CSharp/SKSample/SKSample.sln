@@ -1,24 +1,27 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34112.27
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01HelloWorld", "01HelloWorld", "{ACD70D7F-1B76-4C0A-99A4-D37D277B5418}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "01HelloWorld\HelloWorld\HelloWorld.csproj", "{C8F2A9A3-6B47-4425-9D45-B2433BE48A21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "01HelloWorld\HelloWorld\HelloWorld.csproj", "{C8F2A9A3-6B47-4425-9D45-B2433BE48A21}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02Plugin", "02Plugin", "{222E989D-8DBE-4B1C-B743-20B5CB59C720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKWeatherPlugin", "02Plugin\SKWeatherPlugin\SKWeatherPlugin.csproj", "{98B4BE96-5C10-4C3D-B175-694D0F3C5130}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKWeatherPlugin", "02Plugin\SKWeatherPlugin\SKWeatherPlugin.csproj", "{98B4BE96-5C10-4C3D-B175-694D0F3C5130}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04Planner", "04Planner", "{DAFAB672-22C5-486F-949B-E398685834E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherSKPlugin", "04Planner\SKWeatherPlugin\WeatherSKPlugin.csproj", "{7A6F81AE-41D8-41AE-ABF1-91F25EE1DDAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherSKPlugin", "04Planner\SKWeatherPlugin\WeatherSKPlugin.csproj", "{7A6F81AE-41D8-41AE-ABF1-91F25EE1DDAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05HelloVSCode", "05HelloVSCode", "{C7CC3BEC-9D8A-4A58-82D1-83D0AE3D3800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sk-csharp-hello-world", "05HelloVSCode\sk-csharp-hello-world\sk-csharp-hello-world.csproj", "{59DB9500-DF99-4A6C-A035-33EC6F60CA20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sk-csharp-hello-world", "05HelloVSCode\sk-csharp-hello-world\sk-csharp-hello-world.csproj", "{59DB9500-DF99-4A6C-A035-33EC6F60CA20}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06SemanticFunction", "06SemanticFunction", "{ACE9AC9B-7260-44D1-8702-9CEA3012B562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKSemanticFunction", "06SemanticFunction\sk-csharp-hello-world\SKSemanticFunction.csproj", "{1914DC4F-2950-4C35-B054-77B0F8D6AC48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKSemanticFunction", "06SemanticFunction\sk-csharp-hello-world\SKSemanticFunction.csproj", "{1914DC4F-2950-4C35-B054-77B0F8D6AC48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commonlib", "Commonlib", "{CD8341CC-3BA8-4D57-A509-F3DA9E16C882}"
 	ProjectSection(SolutionItems) = preProject
@@ -27,30 +30,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commonlib", "Commonlib", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{5D4E017C-A560-4372-B318-60CFAFDFD691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigSettings", "Settings\ConfigSettings\ConfigSettings.csproj", "{930B844A-D63F-4934-AA71-F0D2DB7FE937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigSettings", "Settings\ConfigSettings\ConfigSettings.csproj", "{930B844A-D63F-4934-AA71-F0D2DB7FE937}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "upcoming", "upcoming", "{8F2B5AD7-9080-4178-950C-B7A92E3C7A93}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07Chainingfunctions", "07Chainingfunctions", "{6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "upcoming", "upcoming\upcoming.csproj", "{07762914-EB2F-4DC8-9471-968BD593B1AB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07Chainingfunctions ", "07Chainingfunctions ", "{6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChaniningFunction", "07Chainingfunctions\Chaining\ChaniningFunction.csproj", "{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaniningFunction", "07Chainingfunctions\Chaining\ChaniningFunction.csproj", "{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{C8F2A9A3-6B47-4425-9D45-B2433BE48A21} = {ACD70D7F-1B76-4C0A-99A4-D37D277B5418}
-		{98B4BE96-5C10-4C3D-B175-694D0F3C5130} = {222E989D-8DBE-4B1C-B743-20B5CB59C720}
-		{7A6F81AE-41D8-41AE-ABF1-91F25EE1DDAB} = {DAFAB672-22C5-486F-949B-E398685834E9}
-		{59DB9500-DF99-4A6C-A035-33EC6F60CA20} = {C7CC3BEC-9D8A-4A58-82D1-83D0AE3D3800}
-		{1914DC4F-2950-4C35-B054-77B0F8D6AC48} = {ACE9AC9B-7260-44D1-8702-9CEA3012B562}
-		{930B844A-D63F-4934-AA71-F0D2DB7FE937} = {5D4E017C-A560-4372-B318-60CFAFDFD691}
-		{07762914-EB2F-4DC8-9471-968BD593B1AB} = {8F2B5AD7-9080-4178-950C-B7A92E3C7A93}
-		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4} = {6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C8F2A9A3-6B47-4425-9D45-B2433BE48A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -77,13 +66,21 @@ Global
 		{930B844A-D63F-4934-AA71-F0D2DB7FE937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{930B844A-D63F-4934-AA71-F0D2DB7FE937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{930B844A-D63F-4934-AA71-F0D2DB7FE937}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07762914-EB2F-4DC8-9471-968BD593B1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07762914-EB2F-4DC8-9471-968BD593B1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07762914-EB2F-4DC8-9471-968BD593B1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07762914-EB2F-4DC8-9471-968BD593B1AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8F2A9A3-6B47-4425-9D45-B2433BE48A21} = {ACD70D7F-1B76-4C0A-99A4-D37D277B5418}
+		{98B4BE96-5C10-4C3D-B175-694D0F3C5130} = {222E989D-8DBE-4B1C-B743-20B5CB59C720}
+		{7A6F81AE-41D8-41AE-ABF1-91F25EE1DDAB} = {DAFAB672-22C5-486F-949B-E398685834E9}
+		{59DB9500-DF99-4A6C-A035-33EC6F60CA20} = {C7CC3BEC-9D8A-4A58-82D1-83D0AE3D3800}
+		{1914DC4F-2950-4C35-B054-77B0F8D6AC48} = {ACE9AC9B-7260-44D1-8702-9CEA3012B562}
+		{930B844A-D63F-4934-AA71-F0D2DB7FE937} = {5D4E017C-A560-4372-B318-60CFAFDFD691}
+		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4} = {6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}
 	EndGlobalSection
 EndGlobal
