@@ -36,6 +36,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07Chainingfunctions", "07Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaniningFunction", "07Chainingfunctions\Chaining\ChaniningFunction.csproj", "{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09FunctionHooks", "09FunctionHooks", "{4B0E02AA-68BA-44ED-93EB-E701185E3240}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionHooks", "09FunctionHooks\FunctionHooks.csproj", "{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +74,10 @@ Global
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +90,9 @@ Global
 		{1914DC4F-2950-4C35-B054-77B0F8D6AC48} = {ACE9AC9B-7260-44D1-8702-9CEA3012B562}
 		{930B844A-D63F-4934-AA71-F0D2DB7FE937} = {5D4E017C-A560-4372-B318-60CFAFDFD691}
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4} = {6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}
+		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20} = {4B0E02AA-68BA-44ED-93EB-E701185E3240}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
 	EndGlobalSection
 EndGlobal
