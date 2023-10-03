@@ -1,7 +1,7 @@
 <Project>
 
     <PropertyGroup>
-        <NETVersion>net7.0</NETVersion>
+        <NETVersion>net8.0</NETVersion>
         <SKVersion>0.17.230718.1-preview</SKVersion>        
     </PropertyGroup>
 
