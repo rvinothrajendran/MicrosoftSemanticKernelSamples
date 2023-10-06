@@ -38,8 +38,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChaniningFunction", "07Chai
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08SpeechDemo", "08SpeechDemo", "{39576E5C-4B12-4E5B-B9B0-E336AADDED90}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechDemo", "08SpeechDemo\SpeechDemo.csproj", "{B3C7D907-796D-416A-A2B4-7759EBB7A734}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09FunctionHooks", "09FunctionHooks", "{4B0E02AA-68BA-44ED-93EB-E701185E3240}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionHooks", "09FunctionHooks\FunctionHooks.csproj", "{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}"
