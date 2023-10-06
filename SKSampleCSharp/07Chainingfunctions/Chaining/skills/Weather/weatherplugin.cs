@@ -1,26 +1,30 @@
-﻿using System.ComponentModel;
+
 using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.SkillDefinition;
+using System.ComponentModel;
 
-namespace SKWeatherPlugin.Plugins.Weather;
-
-public class WeatherPlugin
+namespace skills.Weather;
+public class WeatherPlugIn
 {
     private readonly string _apiKey;
     private readonly HttpClient _httpClient;
 
-    public WeatherPlugin(string apiKey)
+    public WeatherPlugIn(string apiKey)
     {
+        if (string.IsNullOrEmpty(apiKey))
+            throw new ArgumentNullException(nameof(apiKey));
+
         _apiKey = apiKey;
         _httpClient = new HttpClient();
     }
 
-    [SKFunction,Description("get weather information based on the location")]
-    [SKParameter("input","location or cityName")]
-    public string? GetWeatherAsync(SKContext context)
+    [SKFunction, Description("get weather information based on the location")]
+    [SKParameter("input", "location or cityName")]
+    public SKContext? GetWeatherAsync(SKContext context)
     {
-
-        var cityName = context["input"];
+        
+        context.Variables.TryGetValue("input", out var cityName);
+        
 
         var apiUrl = $"http://api.weatherapi.com/v1/current.json?key={_apiKey}&q={cityName}&aqi=no";
 
@@ -31,7 +35,9 @@ public class WeatherPlugin
 
             var responseBody = response.Content.ReadAsStringAsync().Result;
 
-            return responseBody;
+            context.Variables.Set("weather",responseBody);
+
+            return context;
         }
         catch (HttpRequestException ex)
         {
@@ -40,5 +46,4 @@ public class WeatherPlugin
             return null;
         }
     }
-
 }
