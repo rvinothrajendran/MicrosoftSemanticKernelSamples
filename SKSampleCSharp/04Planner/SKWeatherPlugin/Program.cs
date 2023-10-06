@@ -43,7 +43,8 @@ namespace WeatherSKPlugin
                     if (string.IsNullOrEmpty(input))
                     {
                         var context = kernel.CreateNewContext();
-                        context["input"] = input;
+
+                        context.Variables.Set("input", input);
                         plan = await plan.InvokeNextStepAsync(context);
                     }
                     else

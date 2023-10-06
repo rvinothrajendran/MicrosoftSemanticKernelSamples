@@ -14,7 +14,6 @@ using ILoggerFactory loggerFactory = LoggerFactory.Create(builder =>
 });
 
 IKernel kernel = new KernelBuilder()
-    .WithLogger(loggerFactory.CreateLogger<IKernel>())
     .WithCompletionService(kernelSettings)
     .Build();
 

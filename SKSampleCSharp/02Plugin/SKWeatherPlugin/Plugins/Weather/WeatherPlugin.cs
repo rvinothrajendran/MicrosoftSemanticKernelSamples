@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Net.Http;
 using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.SkillDefinition;
 
@@ -20,7 +21,10 @@ public class WeatherPlugin
     public string? GetWeatherAsync(SKContext context)
     {
 
-        var cityName = context["input"];
+        context.Variables.TryGetValue("input", out var cityName);
+        
+        
+
 
         var apiUrl = $"http://api.weatherapi.com/v1/current.json?key={_apiKey}&q={cityName}&aqi=no";
 

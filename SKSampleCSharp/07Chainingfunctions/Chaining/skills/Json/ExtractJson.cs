@@ -14,16 +14,18 @@ public class ExtractJson
         if (context == null)
             throw new ArgumentNullException(nameof(context));
 
-        JObject jsonJObject = JObject.Parse(context["input"]);
+        context.Variables.TryGetValue("inoput", out var inputValue);
+
+        JObject jsonJObject = JObject.Parse(inputValue);
 
         if (jsonJObject.TryGetValue("cityname", out var city))
         {
-            context["input"] = city.ToString();
+            context.Variables.Set("input", city.ToString());
         }
 
         if (jsonJObject.TryGetValue("history", out var histpory))
         {
-            context["history"] = histpory.ToString();
+            context.Variables.Set("history", city.ToString());
         }
 
         return context;

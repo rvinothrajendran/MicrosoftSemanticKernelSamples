@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)../', 'SKSample.sln'))\Commonlib\library.shared.targets" />
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <TargetFramework>$(NETVersion)</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AzureAI.Community.Microsoft.Semantic.Kernel.Speech" Version="1.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0-preview.7.23375.6" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0-preview.7.23375.6" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0-preview.7.23375.6" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="$(SKVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Settings\ConfigSettings\ConfigSettings.csproj" />
+	</ItemGroup>
+
+	
+
+</Project>
