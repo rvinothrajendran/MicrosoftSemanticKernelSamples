@@ -1,7 +1,8 @@
-﻿using ConfigSettings;
+﻿using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.SemanticFunctions;
-using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.AI;
+using Microsoft.SemanticKernel.Orchestration;
+using Microsoft.SemanticKernel.TemplateEngine;
 
 namespace HelloWorld
 {
@@ -20,32 +21,36 @@ namespace HelloWorld
 
             var template = "Summarize the context of the following text {{$prompt}}";
 
-            var promptConfig = new PromptTemplateConfig()
-            {
-                Completion =
-                {
-                    MaxTokens = 1000,
-                    Temperature = 0.7,
-                    TopP = 1
-                }
-            };
 
+            var aiRequestSettings = new AIRequestSettings();
+            aiRequestSettings.ExtensionData.Add("prompt", "Summarize the context of the following text {{$prompt}}");
+            aiRequestSettings.ExtensionData.Add("max_tokens",100);
+            aiRequestSettings.ExtensionData.Add("temperature",0.7);
+            aiRequestSettings.ExtensionData.Add("top_p",1);
+
+            var promptConfig = new PromptTemplateConfig();
+            promptConfig.ModelSettings.Add(aiRequestSettings);
+            
             var promptTemplate = new PromptTemplate(template, promptConfig,kernel);
 
             //3. Create Semantic Function
 
-            var semanticConfig = new SemanticFunctionConfig(promptConfig, promptTemplate);
+            //var semanticConfig = new SemanticFunctionConfig(promptConfig, promptTemplate);
 
-            var regSemanticFunc = kernel.RegisterSemanticFunction("SummarizeContext", semanticConfig);
+            var regSemanticFunc = kernel.RegisterSemanticFunction("SummarizeContext", promptConfig,promptTemplate);
 
             //4. Invoke Semantic Function
 
             Console.WriteLine("Write the text you want understand the context");
             var input = Console.ReadLine();
 
-            var result = await regSemanticFunc.InvokeAsync(input);
+            var skContext = kernel.CreateNewContext();
+            skContext.Variables.Set("input",input);
+
+            var result = await regSemanticFunc.InvokeAsync(skContext);
 
             //5. Print Result
+            Console.WriteLine(result.GetValue<string>());
 
         }
     }
