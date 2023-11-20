@@ -46,7 +46,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionHooks", "09Function
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateBot", "13IntentBot\TemplateBot\TemplateBot.csproj", "{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13IntentInSK", "13IntentInSK", "{4F5C4F58-F8D1-4D5C-BAF0-430C11DC68BB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13-14-IntentInSK", "13-14-IntentInSK", "{4F5C4F58-F8D1-4D5C-BAF0-430C11DC68BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
