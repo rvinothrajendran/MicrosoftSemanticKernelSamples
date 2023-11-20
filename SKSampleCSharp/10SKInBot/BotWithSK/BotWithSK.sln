@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34205.153
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotWithSK", "BotWithSK.csproj", "{6C821277-94C6-4F9F-A4EE-CCFA83DC16BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKConnector", "..\SKConnector\SKConnector.csproj", "{B7CD1F2C-A6C8-40E3-9C30-7ABFB3E85116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKSample", "..\SKSample\SKSample.csproj", "{5CEA1DD3-551E-479D-97EB-E78B52BB81EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C821277-94C6-4F9F-A4EE-CCFA83DC16BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C821277-94C6-4F9F-A4EE-CCFA83DC16BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C821277-94C6-4F9F-A4EE-CCFA83DC16BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C821277-94C6-4F9F-A4EE-CCFA83DC16BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CD1F2C-A6C8-40E3-9C30-7ABFB3E85116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CD1F2C-A6C8-40E3-9C30-7ABFB3E85116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CD1F2C-A6C8-40E3-9C30-7ABFB3E85116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CD1F2C-A6C8-40E3-9C30-7ABFB3E85116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEA1DD3-551E-479D-97EB-E78B52BB81EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEA1DD3-551E-479D-97EB-E78B52BB81EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEA1DD3-551E-479D-97EB-E78B52BB81EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEA1DD3-551E-479D-97EB-E78B52BB81EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4053743-A3D1-430E-8D08-46E72937C706}
+	EndGlobalSection
+EndGlobal
