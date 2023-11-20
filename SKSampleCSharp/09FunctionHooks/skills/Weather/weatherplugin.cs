@@ -1,6 +1,7 @@
 using System.ComponentModel;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
-using Microsoft.SemanticKernel.SkillDefinition;
+
 
 namespace FunctionHooks.skills.Weather;
 public class WeatherPlugIn
@@ -18,7 +19,7 @@ public class WeatherPlugIn
     }
 
     [SKFunction, Description("get weather information based on the location")]
-    [SKParameter("input", "location or cityName")]
+    //[SKParameter("input", "location or cityName")]
     public SKContext? GetWeatherAsync(SKContext context)
     {
         

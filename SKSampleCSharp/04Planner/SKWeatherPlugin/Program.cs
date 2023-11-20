@@ -1,7 +1,8 @@
 ﻿using ConfigSettings;
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.Planning;
+using Microsoft.SemanticKernel.Planners;
 using SKWeatherPlugin.Plugins.Weather;
+using System;
 
 namespace WeatherSKPlugin
 {
@@ -25,8 +26,8 @@ namespace WeatherSKPlugin
             {
                 var plugins = Path.Combine(Directory.GetCurrentDirectory(), "Plugins");
                 
-                var plugIn = kernel.ImportSemanticSkillFromDirectory(plugins, "History");
-                kernel.ImportSkill(new WeatherPlugin(ConfigParameters.WeatherApiKey), nameof(WeatherPlugin));
+                var plugIn = kernel.ImportSemanticFunctionsFromDirectory(plugins, "History");
+                kernel.ImportFunctions(new WeatherPlugin(ConfigParameters.WeatherApiKey), nameof(WeatherPlugin));
             
                 //Create a planner
 
@@ -36,8 +37,13 @@ namespace WeatherSKPlugin
 
                 var plan = await planner.CreatePlanAsync(input);
 
+                
+                var result = await kernel.RunAsync(plan);
+
+                Console.WriteLine(result.GetValue<string>());
+
                 // var result = await plan.InvokeAsync(input);
-               
+
                 for (int step = 1; plan.HasNextStep && step < 10; step++)
                 {
                     if (string.IsNullOrEmpty(input))
@@ -50,7 +56,7 @@ namespace WeatherSKPlugin
                     else
                     {
                         plan = await kernel.StepAsync(input, plan);
-                       // input = string.Empty;
+                        //input = string.Empty;
                     }
 
                     if (!plan.HasNextStep)
@@ -64,9 +70,12 @@ namespace WeatherSKPlugin
                     Console.WriteLine(plan.State.ToString());
                 }
 
-                var planResult = await plan.InvokeAsync();
+                var contextResult = kernel.CreateNewContext();
+                contextResult.Variables.Set("input", input);
 
-                Console.WriteLine(planResult.Result);
+                var planResult = await plan.InvokeAsync(contextResult);
+
+                //Console.WriteLine(planResult.Result);
             }
             catch (Exception e)
             {
