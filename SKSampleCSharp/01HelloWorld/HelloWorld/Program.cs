@@ -1,6 +1,7 @@
 ﻿using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.SemanticFunctions;
-using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.AI;
+using Microsoft.SemanticKernel.TemplateEngine;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HelloWorld
 {
@@ -8,6 +9,13 @@ namespace HelloWorld
     {
         static async Task Main(string[] args)
         {
+
+            //getting input from user
+            Console.WriteLine("Write the text you want understand the context");
+            string? input = Console.ReadLine();
+
+#if  DISABLE
+            
 
             //1. Create Semantic Kernel Builder
 
@@ -19,14 +27,17 @@ namespace HelloWorld
 
             var template = "Summarize the context of the following text {{$prompt}}";
 
-            var promptConfig = new PromptTemplateConfig()
+            var aiSettings = new AIRequestSettings();
+            aiSettings.ExtensionData = new Dictionary<string, object>()
             {
-                Completion =
-                {
-                    MaxTokens = 1000,
-                    Temperature = 0.7,
-                    TopP = 1
-                }
+                { "MaxTokens", 1000 },
+                { "Temperature", 0.7 },
+                { "TopP", 1 },
+            };
+
+            var promptConfig = new PromptTemplateConfig
+            {
+                ModelSettings = new List<AIRequestSettings> { aiSettings }
             };
 
             var promptTemplate = new PromptTemplate(template, promptConfig,kernel);
@@ -35,18 +46,22 @@ namespace HelloWorld
 
             //var semanticConfig = new SemanticFunctionConfig(promptConfig, promptTemplate);
 
-            var regSemanticFunc = kernel.RegisterSemanticFunction("SummarizeContext", semanticConfig);
+            if (input is not null)
+            {
+                string prompt = input;
+                var regSemanticFunc = kernel.RegisterSemanticFunction("Summarize the context of the following text ",input,promptConfig);
 
-            //4. Invoke Semantic Function
+                //4. Invoke Semantic Function
 
-            Console.WriteLine("Write the text you want understand the context");
-            var input = Console.ReadLine();
 
-            var result = await regSemanticFunc.InvokeAsync(input);
 
-            //5. Print Result
-            Console.WriteLine(result.GetValue<string>());
+                var result = await kernel.RunAsync(regSemanticFunc);
 
+                //5. Print Result
+                Console.WriteLine(result.GetValue<string>());
+            }
+
+#endif
         }
     }
 }
