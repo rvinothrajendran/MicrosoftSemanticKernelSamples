@@ -19,16 +19,17 @@ namespace FunctionHooks
             kernel.FunctionInvoking += Kernel_FunctionInvoking;
             kernel.FunctionInvoked += Kernel_FunctionInvoked;
 
-            // note: using skills from the repo
-            var skillsDirectory = Path.Combine(System.IO.Directory.GetCurrentDirectory(), "skills");
-            var skill = kernel.ImportSemanticSkillFromDirectory(skillsDirectory, "citySkill");
+            var skillsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "skills");
+            var skill = kernel.ImportSemanticFunctionsFromDirectory(skillsDirectory, "citySkill");
 
-            kernel.ImportSkill(new ExtractJson(), nameof(ExtractJson));
-            kernel.ImportSkill(new WeatherPlugIn(Settings.WeatherApiKey), nameof(WeatherPlugIn));
+            kernel.ImportFunctions(new ExtractJson(), nameof(ExtractJson));
+            kernel.ImportFunctions(new WeatherPlugIn(Settings.WeatherApiKey), nameof(WeatherPlugIn));
 
+            var jsonSkillFunc = kernel.Functions.GetFunction(nameof(ExtractJson), "ExtractInformation");
+            var weatherFunc = kernel.Functions.GetFunction(nameof(WeatherPlugIn), "GetWeatherAsync");
 
-            var jsonSkillFunc = kernel.Skills.GetFunction(nameof(ExtractJson), "ExtractInformation");
-            var weatherFunc = kernel.Skills.GetFunction(nameof(WeatherPlugIn), "GetWeatherAsync");
+            //var jsonSkillFunc = kernel.Skills.GetFunction(nameof(ExtractJson), "ExtractInformation");
+            //var weatherFunc = kernel.Skills.GetFunction(nameof(WeatherPlugIn), "GetWeatherAsync");
 
             var context = new ContextVariables();
             context.Set("input", "I plan to visit Paris");

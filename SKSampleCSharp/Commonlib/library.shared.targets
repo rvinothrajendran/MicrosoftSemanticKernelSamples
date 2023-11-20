@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <NETVersion>net8.0</NETVersion>
-        <SKVersion>0.24.230918.1-preview</SKVersion>        
+        <SKVersion>1.0.0-beta2</SKVersion>        
     </PropertyGroup>
 
 </Project>

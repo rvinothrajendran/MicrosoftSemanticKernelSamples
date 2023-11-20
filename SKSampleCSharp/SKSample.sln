@@ -44,6 +44,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09FunctionHooks", "09Functi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionHooks", "09FunctionHooks\FunctionHooks.csproj", "{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateBot", "13IntentBot\TemplateBot\TemplateBot.csproj", "{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13IntentInSK", "13IntentInSK", "{4F5C4F58-F8D1-4D5C-BAF0-430C11DC68BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +90,10 @@ Global
 		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +108,7 @@ Global
 		{91C6A79D-B28F-4679-A8B3-2F1B0D56FFA4} = {6EA82CA5-5BA5-45CB-AE12-9DD8FCB7E81D}
 		{B3C7D907-796D-416A-A2B4-7759EBB7A734} = {39576E5C-4B12-4E5B-B9B0-E336AADDED90}
 		{8CD7BA03-AA1F-4CA2-A5D2-AE19B3621E20} = {4B0E02AA-68BA-44ED-93EB-E701185E3240}
+		{51CA2DA2-AEDD-4071-84F9-0F5076E1DD7F} = {4F5C4F58-F8D1-4D5C-BAF0-430C11DC68BB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}

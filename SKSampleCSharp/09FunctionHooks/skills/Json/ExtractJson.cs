@@ -1,6 +1,6 @@
 using System.ComponentModel;
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
-using Microsoft.SemanticKernel.SkillDefinition;
 using Newtonsoft.Json.Linq;
 
 namespace FunctionHooks.skills.Json;

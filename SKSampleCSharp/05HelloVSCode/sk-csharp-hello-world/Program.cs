@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.AI;
 using Microsoft.SemanticKernel.AI.ChatCompletion;
 using Microsoft.SemanticKernel.Orchestration;
 
@@ -37,7 +38,7 @@ else if (kernelSettings.EndpointType == EndpointTypes.ChatCompletion)
     var chat = chatCompletionService.CreateNewChat("You are an AI assistant that helps people find information.");
     chat.AddMessage(AuthorRole.User, "Hi, what information can you provide for me?");
 
-    string response = await chatCompletionService.GenerateMessageAsync(chat, new ChatRequestSettings());
+    string response = await chatCompletionService.GenerateMessageAsync(chat,new AIRequestSettings());
     Console.WriteLine(response);
 }
 
