@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "description": "Find Primary categories and secondary categories",
+  "type": "completion",
+  "completion": {
+    "max_tokens": 100
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "input",
+        "description": "This input provided by user",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
