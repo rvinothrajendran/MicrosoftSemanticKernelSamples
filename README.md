@@ -9,4 +9,6 @@ In this example, we illustrate a Hello World application using the Semantic Kern
 
 [Source code here](https://github.com/rvinothrajendran/MicrosoftSemanticKernelSamples/tree/main/SKSampleCSharp/01HelloWorld)
 
+
+### Video tutorials are available here
 [![Watch the Demo](https://img.youtube.com/vi/-lPI4DNKDWc/0.jpg)](https://www.youtube.com/watch?v=-lPI4DNKDWc&t=0s)
