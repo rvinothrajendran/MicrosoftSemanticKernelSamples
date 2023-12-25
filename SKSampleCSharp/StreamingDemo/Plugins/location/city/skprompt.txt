@@ -1,0 +1,2 @@
+﻿First find the city or location name in the given input {{$input}}.
+Once find the city or location name after that find the history information
