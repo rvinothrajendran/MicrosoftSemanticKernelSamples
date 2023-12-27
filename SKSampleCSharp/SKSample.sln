@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromptYAMLDemo", "PromptYAM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromptFunctionDemo", "PromptFunction\PromptFunctionDemo.csproj", "{CF329A99-3B84-4326-9C58-6210FABCEC1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09HandleBarsTemplate", "09HandleBarsTemplate", "{64D6EAD8-1EB6-42CC-BCAC-8D44DD2FEC2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandleBarsPromptTemplate", "HandleBarsPromptTemplate\HandleBarsPromptTemplate.csproj", "{785BB03B-2CC4-4428-A835-1B9266F0AE86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{CF329A99-3B84-4326-9C58-6210FABCEC1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF329A99-3B84-4326-9C58-6210FABCEC1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF329A99-3B84-4326-9C58-6210FABCEC1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785BB03B-2CC4-4428-A835-1B9266F0AE86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785BB03B-2CC4-4428-A835-1B9266F0AE86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785BB03B-2CC4-4428-A835-1B9266F0AE86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785BB03B-2CC4-4428-A835-1B9266F0AE86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,7 @@ Global
 		{5AC39E3B-E098-422A-A089-725D1F85656B} = {63112BAD-C19D-422B-8A22-A42742C70BA9}
 		{64A699EB-0930-4853-8F7E-D45356197D61} = {D5DD510E-C333-4C23-ADCC-B617F2D4B526}
 		{CF329A99-3B84-4326-9C58-6210FABCEC1B} = {33C10166-CF79-4853-B65B-C8DF1BE62D65}
+		{785BB03B-2CC4-4428-A835-1B9266F0AE86} = {64D6EAD8-1EB6-42CC-BCAC-8D44DD2FEC2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
