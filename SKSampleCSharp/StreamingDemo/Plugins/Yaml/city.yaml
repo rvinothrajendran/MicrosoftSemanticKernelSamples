@@ -1,0 +1,17 @@
+﻿name: city
+template: |
+  First find the city or location name in the given input ```{{$input}}```.Once find the city or location name after that find the history information
+template_format: semantic-kernel
+description: find the history information of the city.
+input_variables:
+  - name: input
+    description: The user's request which contains city or location name.
+    is_required: true
+output_variable:
+  description: find the city and history information.
+
+execution_settings:
+  default:
+    temperature: 0.6
+    max_tokens: 500
+
