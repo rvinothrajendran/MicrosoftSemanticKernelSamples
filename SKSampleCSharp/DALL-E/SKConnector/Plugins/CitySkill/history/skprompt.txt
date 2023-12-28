@@ -1,0 +1,8 @@
+Find the city or location mentioned in the given text: {{$input}}. 
+Share the city's name and a short history in JSON format, keeping it within two lines without extra spaces or new lines.
+
+example
+{
+    "cityname": "CityNameHere",
+    "history": "Brief history of the city."
+}

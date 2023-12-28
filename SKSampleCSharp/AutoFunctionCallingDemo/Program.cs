@@ -2,7 +2,7 @@
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 
-namespace FunctionCallingDemo
+namespace AutoFunctionCallingDemo
 {
     internal class Program
     {
@@ -10,12 +10,12 @@ namespace FunctionCallingDemo
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
 
-            Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 / Function Calling Demo");
+            Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 / Auto - Function Calling Demo");
 
             //var userInput = Console.ReadLine();
 
             const string userInput = "I need history information of Bangalore";
-            
+
             //Create a kernel builder and add the Azure OpenAI Chat Completion service
             var kernelBuilder = Kernel.CreateBuilder()
                 .AddAzureOpenAIChatCompletion(Config.DeploymentOrModelId, Config.Endpoint, Config.ApiKey)
@@ -32,7 +32,7 @@ namespace FunctionCallingDemo
             var openAIPromptSettings = new OpenAIPromptExecutionSettings()
             {
                 MaxTokens = 50,
-                ToolCallBehavior = ToolCallBehavior.EnableKernelFunctions
+                ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
             };
 
             //Chat Completion Service
@@ -47,25 +47,8 @@ namespace FunctionCallingDemo
                 await chatCompletionService.GetChatMessageContentAsync(chatHistory, openAIPromptSettings,
                     kernelBuilder);
 
-            //FunctionToolCalls
-
-            var openAIChatMessageContent = (OpenAIChatMessageContent)result;
-
-            var functionToolCalls = openAIChatMessageContent.GetOpenAIFunctionToolCalls();
-
-            foreach (var functionTool in functionToolCalls)
-            {
-                kernelBuilder.Plugins.TryGetFunctionAndArguments(functionTool, out var kernelFunction,
-                    out var kernelArguments);
-
-                var functionResult = await kernelBuilder.InvokeAsync(kernelFunction!, kernelArguments!);
-
-                var functionResponse = functionResult.GetValue<string>();
-                Console.WriteLine(functionResponse);
-                
-                chatHistory.AddMessage(AuthorRole.Tool, functionResponse!);
-            }
-
+            Console.WriteLine(result.Content);
+            
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.WriteLine("Final Result");
