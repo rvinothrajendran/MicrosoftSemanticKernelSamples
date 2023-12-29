@@ -13,29 +13,27 @@ namespace JSONHandleBarsTemplate
 
             Console.ForegroundColor = ConsoleColor.White;
 
-            while (true)
-            {
+            
+            Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 - JSON Prompt");
 
-                Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 - JSON Prompt");
+            Console.WriteLine("Enter the text with city information");
 
-                Console.WriteLine("Enter the text with city information");
+            var userInput = Console.ReadLine();
 
-                var userInput = Console.ReadLine();
+            //var userInput = "please let me know information of Chennai";
 
-                //var userInput = "please let me know information of Chennai";
+            kernel = CreateKernelBuilder();
 
-                kernel = CreateKernelBuilder();
+            var weatherInformation = await GetWeatherInformation(userInput!);
 
-                var weatherInformation = await GetWeatherInformation(userInput!);
+            var prompt = await CreatePromptTemplate(kernel!, userInput!, weatherInformation!);
 
-                var prompt = await CreatePromptTemplate(kernel!, userInput!, weatherInformation!);
+            var result = await kernel!.InvokePromptAsync(prompt);
 
-                var result = await kernel!.InvokePromptAsync(prompt);
-
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine(result.GetValue<string>());
-                Console.Read();
-            }
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(result.GetValue<string>());
+            Console.Read();
+            
 
         }
 
