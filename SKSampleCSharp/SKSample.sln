@@ -47,6 +47,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKConnector", "DALL-E\SKCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingDemo", "..\..\gitsksample\SKSampleCSharp\FunctionCallingDemo\FunctionCallingDemo.csproj", "{727124FF-841F-408E-961B-F0673587310D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11JSONInHandleBarsTemplate", "11JSONInHandleBarsTemplate", "{5C520547-3750-48B8-B918-911049669A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONHandleBarsTemplate", "JSONHandleBarsTemplate\JSONHandleBarsTemplate.csproj", "{B46E6640-F554-4664-B873-9167DB47A290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{727124FF-841F-408E-961B-F0673587310D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{727124FF-841F-408E-961B-F0673587310D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{727124FF-841F-408E-961B-F0673587310D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46E6640-F554-4664-B873-9167DB47A290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46E6640-F554-4664-B873-9167DB47A290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46E6640-F554-4664-B873-9167DB47A290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46E6640-F554-4664-B873-9167DB47A290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +121,7 @@ Global
 		{C8B7B6B7-F402-4231-9AAE-E2079705568F} = {4EA1CFE4-01DB-4F60-9860-87FA571161DD}
 		{D6A2DA9A-3ADF-42C3-8D3E-C6C813CF1566} = {4EA1CFE4-01DB-4F60-9860-87FA571161DD}
 		{727124FF-841F-408E-961B-F0673587310D} = {2F0A71FD-1D03-4DE5-8863-F7DAD5B94584}
+		{B46E6640-F554-4664-B873-9167DB47A290} = {5C520547-3750-48B8-B918-911049669A68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
