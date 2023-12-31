@@ -49,7 +49,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingDemo", "..\.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11JSONInHandleBarsTemplate", "11JSONInHandleBarsTemplate", "{5C520547-3750-48B8-B918-911049669A68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONHandleBarsTemplate", "JSONHandleBarsTemplate\JSONHandleBarsTemplate.csproj", "{B46E6640-F554-4664-B873-9167DB47A290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSONHandleBarsTemplate", "JSONHandleBarsTemplate\JSONHandleBarsTemplate.csproj", "{B46E6640-F554-4664-B873-9167DB47A290}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12FunctionCallingStepwise", "12FunctionCallingStepwise", "{5FF04E87-5EB8-428D-B3C4-CABB0BD18E5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingStepwiseDemo", "FunctionCallingStepwiseDemo\FunctionCallingStepwiseDemo.csproj", "{0ECE212B-6855-4EF6-B297-EE61DD518238}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13HandlebarsPlanner", "13HandlebarsPlanner", "{8ADA96B4-E7F2-458D-BC52-DAC325FBC549}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandlebarsPlannerDemo", "HandlebarsPlannerDemo\HandlebarsPlannerDemo.csproj", "{3A18105A-2015-4729-9EDA-77E3D32528F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14HandlebarsPlanner-Save", "14HandlebarsPlanner-Save", "{8F2F6C4C-D166-44A4-AE89-877DB67F8171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandleBarsPlannerSaveDemo", "HandleBarsPlannerSaveDemo\HandleBarsPlannerSaveDemo.csproj", "{77FC9A89-9431-4762-8FD7-F75D8475F53E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +117,18 @@ Global
 		{B46E6640-F554-4664-B873-9167DB47A290}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B46E6640-F554-4664-B873-9167DB47A290}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B46E6640-F554-4664-B873-9167DB47A290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ECE212B-6855-4EF6-B297-EE61DD518238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECE212B-6855-4EF6-B297-EE61DD518238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECE212B-6855-4EF6-B297-EE61DD518238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECE212B-6855-4EF6-B297-EE61DD518238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A18105A-2015-4729-9EDA-77E3D32528F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A18105A-2015-4729-9EDA-77E3D32528F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A18105A-2015-4729-9EDA-77E3D32528F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A18105A-2015-4729-9EDA-77E3D32528F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FC9A89-9431-4762-8FD7-F75D8475F53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FC9A89-9431-4762-8FD7-F75D8475F53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FC9A89-9431-4762-8FD7-F75D8475F53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FC9A89-9431-4762-8FD7-F75D8475F53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,6 +146,9 @@ Global
 		{D6A2DA9A-3ADF-42C3-8D3E-C6C813CF1566} = {4EA1CFE4-01DB-4F60-9860-87FA571161DD}
 		{727124FF-841F-408E-961B-F0673587310D} = {2F0A71FD-1D03-4DE5-8863-F7DAD5B94584}
 		{B46E6640-F554-4664-B873-9167DB47A290} = {5C520547-3750-48B8-B918-911049669A68}
+		{0ECE212B-6855-4EF6-B297-EE61DD518238} = {5FF04E87-5EB8-428D-B3C4-CABB0BD18E5B}
+		{3A18105A-2015-4729-9EDA-77E3D32528F6} = {8ADA96B4-E7F2-458D-BC52-DAC325FBC549}
+		{77FC9A89-9431-4762-8FD7-F75D8475F53E} = {8F2F6C4C-D166-44A4-AE89-877DB67F8171}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
