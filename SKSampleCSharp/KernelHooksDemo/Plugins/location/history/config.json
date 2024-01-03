@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "find the history information of the city",
+  "completion": {
+    "max_tokens": 500,
+    "temperature": 0.0,
+    "top_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "The user's request which contains city or location name.",
+      "is_required": true,
+      "default": ""
+    }
+  ]
+    
+}
