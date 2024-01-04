@@ -10,11 +10,10 @@ public class ExternalWeatherPlugin(string apikey)
     public static string GetWeather => "GetWeatherAsync";
 
     [KernelFunction, Description("get weather information based on the location")]
-    public string? GetWeatherAsync(KernelArguments kernelArguments)
+    public string? GetWeatherAsync(string cityName)
     {
-        kernelArguments.TryGetValue("input", out var cityName);
-
-        var apiUrl = $"http://api.weatherapi.com/v1/current.json?key={apikey}&q={cityName.ToString()}&aqi=no";
+        
+        var apiUrl = $"http://api.weatherapi.com/v1/current.json?key={apikey}&q={cityName}&aqi=no";
 
         try
         {
