@@ -45,7 +45,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotWithSK", "DALL-E\BotWith
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKConnector", "DALL-E\SKConnector\SKConnector.csproj", "{D6A2DA9A-3ADF-42C3-8D3E-C6C813CF1566}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingDemo", "..\..\gitsksample\SKSampleCSharp\FunctionCallingDemo\FunctionCallingDemo.csproj", "{727124FF-841F-408E-961B-F0673587310D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingDemo", "FunctionCallingDemo\FunctionCallingDemo.csproj", "{727124FF-841F-408E-961B-F0673587310D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11JSONInHandleBarsTemplate", "11JSONInHandleBarsTemplate", "{5C520547-3750-48B8-B918-911049669A68}"
 EndProject
@@ -69,7 +69,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KernelHooksDemo", "KernelHo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16BingMapPlugin", "16BingMapPlugin", "{C24C0E8B-0A79-4C58-8D3B-8F75BFB340D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingMapPluginDemo", "BingMapPluginDemo\BingMapPluginDemo.csproj", "{94FD690C-BAAB-47A3-B210-0C0E2C0FE282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BingMapPluginDemo", "BingMapPluginDemo\BingMapPluginDemo.csproj", "{94FD690C-BAAB-47A3-B210-0C0E2C0FE282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "17BuildTinyCopilot", "17BuildTinyCopilot", "{A54F1F26-4E03-447C-BE40-7715DD438486}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCopilot", "TinyCopilot\TinyCopilot.csproj", "{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18TinyCopilotGPT4Vision", "18TinyCopilotGPT4Vision", "{138A9D6A-2088-4377-B145-03569E8F733B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCopilotGPT4VisionDemo", "TinyCopilotGPT4VisionDemo\TinyCopilotGPT4VisionDemo.csproj", "{8698F336-5E88-4C84-A5DB-797F8FEAE15C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +153,14 @@ Global
 		{94FD690C-BAAB-47A3-B210-0C0E2C0FE282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94FD690C-BAAB-47A3-B210-0C0E2C0FE282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94FD690C-BAAB-47A3-B210-0C0E2C0FE282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,6 +183,8 @@ Global
 		{77FC9A89-9431-4762-8FD7-F75D8475F53E} = {8F2F6C4C-D166-44A4-AE89-877DB67F8171}
 		{0E0457F1-E884-45CE-ABB9-1DFDF81AAFE0} = {8C083CC6-F251-4D9C-97F7-EA6861FB8AD4}
 		{94FD690C-BAAB-47A3-B210-0C0E2C0FE282} = {C24C0E8B-0A79-4C58-8D3B-8F75BFB340D6}
+		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03} = {A54F1F26-4E03-447C-BE40-7715DD438486}
+		{8698F336-5E88-4C84-A5DB-797F8FEAE15C} = {138A9D6A-2088-4377-B145-03569E8F733B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
