@@ -77,7 +77,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCopilot", "TinyCopilot\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "18TinyCopilotGPT4Vision", "18TinyCopilotGPT4Vision", "{138A9D6A-2088-4377-B145-03569E8F733B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCopilotGPT4VisionDemo", "TinyCopilotGPT4VisionDemo\TinyCopilotGPT4VisionDemo.csproj", "{8698F336-5E88-4C84-A5DB-797F8FEAE15C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCopilotGPT4VisionDemo", "TinyCopilotGPT4VisionDemo\TinyCopilotGPT4VisionDemo.csproj", "{8698F336-5E88-4C84-A5DB-797F8FEAE15C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "19KernelMemory", "19KernelMemory", "{CDD76653-CDA9-4C8C-A3F9-8E67C2011471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryServerlessDemo", "MemoryServerlessDemo\MemoryServerlessDemo.csproj", "{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -161,6 +165,10 @@ Global
 		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8698F336-5E88-4C84-A5DB-797F8FEAE15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +193,7 @@ Global
 		{94FD690C-BAAB-47A3-B210-0C0E2C0FE282} = {C24C0E8B-0A79-4C58-8D3B-8F75BFB340D6}
 		{C7CF1E25-B102-4CD9-86A1-84CE6F8A7F03} = {A54F1F26-4E03-447C-BE40-7715DD438486}
 		{8698F336-5E88-4C84-A5DB-797F8FEAE15C} = {138A9D6A-2088-4377-B145-03569E8F733B}
+		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC} = {CDD76653-CDA9-4C8C-A3F9-8E67C2011471}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
