@@ -91,6 +91,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "21CustomLLMYouTube-Streamin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomLLMYoutubeStreamingDemo", "CustomLLMYoutubeStreamingDemo\CustomLLMYoutubeStreamingDemo.csproj", "{567DE134-0F7E-4D33-A66E-3213024C2112}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "23Local-LLM-Demo", "23Local-LLM-Demo", "{505B7316-5AF6-46E3-AB34-197DD7E8079C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalLLMDemo", "LocalLLMDemo\LocalLLMDemo.csproj", "{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +189,10 @@ Global
 		{567DE134-0F7E-4D33-A66E-3213024C2112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{567DE134-0F7E-4D33-A66E-3213024C2112}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{567DE134-0F7E-4D33-A66E-3213024C2112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,6 +220,7 @@ Global
 		{D0F9369A-7F02-4DF9-B1D8-1C60FBAFACBC} = {CDD76653-CDA9-4C8C-A3F9-8E67C2011471}
 		{0E8CEF03-5630-447C-9600-838746E39325} = {EB23E374-C9C2-48DF-9716-D584FC666DBB}
 		{567DE134-0F7E-4D33-A66E-3213024C2112} = {7E20E71B-EB07-42E5-A7CE-FC6B671323FB}
+		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B} = {505B7316-5AF6-46E3-AB34-197DD7E8079C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
