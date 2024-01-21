@@ -99,6 +99,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22KenelFunctionFactory", "2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KernelFunctionFactoryDemo", "KernelFunctionFactoryDemo\KernelFunctionFactoryDemo.csproj", "{679B8869-482F-4E3B-A68B-D34D92EFBC35}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "24InterfacePlugins", "24InterfacePlugins", "{EBAEB10A-E92E-41F2-91AD-DB99F6DDB680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacePluginsDemo", "InterfacePluginsDemo\InterfacePluginsDemo.csproj", "{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +205,10 @@ Global
 		{679B8869-482F-4E3B-A68B-D34D92EFBC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{679B8869-482F-4E3B-A68B-D34D92EFBC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{679B8869-482F-4E3B-A68B-D34D92EFBC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +238,7 @@ Global
 		{567DE134-0F7E-4D33-A66E-3213024C2112} = {7E20E71B-EB07-42E5-A7CE-FC6B671323FB}
 		{3C7811CA-CC3B-4E6C-ACA6-7654B80DF95B} = {505B7316-5AF6-46E3-AB34-197DD7E8079C}
 		{679B8869-482F-4E3B-A68B-D34D92EFBC35} = {C8EDEA3B-67EC-40DF-AF49-2BE59938A430}
+		{722E7E5D-68E2-404A-BBFC-EB6F6F22DE40} = {EBAEB10A-E92E-41F2-91AD-DB99F6DDB680}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
