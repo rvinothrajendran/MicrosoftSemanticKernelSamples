@@ -3,7 +3,7 @@
     /// <summary>
     /// Configurations for Azure OpenAI Chat Completion service
     /// </summary>
-    public static class Config
+    public  class Config
     {
         /// <summary>
         /// Azure OpenAI deployment name
