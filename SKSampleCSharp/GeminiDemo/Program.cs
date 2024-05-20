@@ -16,7 +16,6 @@ namespace GeminiDemo
                 .AddGoogleAIGeminiChatCompletion(Config.GeminiModelId,Config.GeminiApiKey)
                 .Build();
 
-
             var chatService = kernel.GetRequiredService<IChatCompletionService>();
 
             var chatHistory = new ChatHistory();
