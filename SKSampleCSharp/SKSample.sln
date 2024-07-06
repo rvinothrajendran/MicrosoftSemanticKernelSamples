@@ -131,6 +131,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "32InvocationFilter", "32Inv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvocationFilter", "InvocationFilter\InvocationFilter.csproj", "{C513F024-3B7F-4156-A304-F46B6C40C5F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33FunctionCalling", "33FunctionCalling", "{412CDA71-3E45-4576-9318-2FBC87ABFAC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKFunctionCalling", "SKFunctionCalling\SKFunctionCalling.csproj", "{546F1841-B574-43DC-8658-7E37C038B642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -265,6 +269,10 @@ Global
 		{C513F024-3B7F-4156-A304-F46B6C40C5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C513F024-3B7F-4156-A304-F46B6C40C5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C513F024-3B7F-4156-A304-F46B6C40C5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{546F1841-B574-43DC-8658-7E37C038B642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{546F1841-B574-43DC-8658-7E37C038B642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{546F1841-B574-43DC-8658-7E37C038B642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{546F1841-B574-43DC-8658-7E37C038B642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -302,6 +310,7 @@ Global
 		{E992E5F2-13B2-4729-B63B-90F77636FCA6} = {C67F645C-2CB0-41EA-A8CB-4D339A80E4FE}
 		{8B9F6CE7-2CDD-4F6A-822D-A3782689B3AB} = {CEC708D2-C3DE-4E49-9BB3-AB41FA7CE30A}
 		{C513F024-3B7F-4156-A304-F46B6C40C5F9} = {A9135823-132B-46BC-803B-C869C3E9F741}
+		{546F1841-B574-43DC-8658-7E37C038B642} = {412CDA71-3E45-4576-9318-2FBC87ABFAC5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
