@@ -133,15 +133,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvocationFilter", "Invocat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33AutoInvoationFilter", "33AutoInvoationFilter", "{FDE25427-0C5C-4DB8-96E6-09A9FCC23FBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoInvocationFilterSample", "AutoInvocationSample\AutoInvocationFilterSample.csproj", "{30F309FE-962A-4FD0-B5D0-6D5B498C321F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoInvocationFilterSample", "AutoInvocationSample\AutoInvocationFilterSample.csproj", "{30F309FE-962A-4FD0-B5D0-6D5B498C321F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "33FunctionCalling", "33FunctionCalling", "{412CDA71-3E45-4576-9318-2FBC87ABFAC5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "34FunctionCalling", "34FunctionCalling", "{412CDA71-3E45-4576-9318-2FBC87ABFAC5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKFunctionCalling", "SKFunctionCalling\SKFunctionCalling.csproj", "{546F1841-B574-43DC-8658-7E37C038B642}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "34FunctionCallingHelper", "34FunctionCallingHelper", "{B80878C7-9EC6-4ED6-8397-5C36DFCF882E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "35FunctionCallingHelper", "35FunctionCallingHelper", "{B80878C7-9EC6-4ED6-8397-5C36DFCF882E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionCallingHelper", "FunctionCallingHelper\FunctionCallingHelper.csproj", "{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingHelper", "FunctionCallingHelper\FunctionCallingHelper.csproj", "{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
