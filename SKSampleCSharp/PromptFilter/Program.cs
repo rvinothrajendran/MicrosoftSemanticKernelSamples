@@ -10,6 +10,7 @@ namespace PromptFilter
     {
         static async Task Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 - Kernel - PromptRenderFilter\n");
 
             var kernel = CreateKernelBuilder();
@@ -26,6 +27,8 @@ namespace PromptFilter
             };
 
             var response = await chatService.GetChatMessageContentsAsync(chatHistory, settings, kernel);
+
+            Console.ForegroundColor = ConsoleColor.White;
 
             if (response.Count > 0)
             {
@@ -45,52 +48,9 @@ namespace PromptFilter
             var plugInDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Plugins", "location");
             builder.Plugins.AddFromPromptDirectory(plugInDirectory, "location");
 
-            builder.Services.AddSingleton<IPromptRenderFilter, PromptRenderFilters>();
-            builder.Services.AddSingleton<IFunctionInvocationFilter, FunctionInvocationFilter>();
-            builder.Services.AddSingleton<IAutoFunctionInvocationFilter, AutoFunctionInvocationFilter>();
+            builder.Services.AddSingleton<IPromptRenderFilter, PromptRenderFilter>();
 
             return builder.Build()!;
-        }
-    }
-
-    public class PromptRenderFilters : IPromptRenderFilter
-    {
-        public async Task OnPromptRenderAsync(PromptRenderContext context, Func<PromptRenderContext, Task> next)
-        {
-            Console.WriteLine("\nBefore OnPromptRenderAsync");
-            await next(context);
-            Console.WriteLine("\nAfter OnPromptRenderAsync");
-        }
-    }
-
-    public class AutoFunctionInvocationFilter : IAutoFunctionInvocationFilter
-    {
-        public async Task OnAutoFunctionInvocationAsync(AutoFunctionInvocationContext context, Func<AutoFunctionInvocationContext, Task> next)
-        {
-            Console.WriteLine("\nAutoFunctionInvocationFilter");
-
-            Console.WriteLine(context.Function.PluginName);
-            Console.WriteLine(context.Function.Name);
-
-            await next(context);
-
-            Console.WriteLine("\nAfter AutoFunctionInvocationFilter Executed");
-        }
-    }
-    public class FunctionInvocationFilter : IFunctionInvocationFilter
-    {
-        public async Task OnFunctionInvocationAsync(FunctionInvocationContext context, Func<FunctionInvocationContext, Task> next)
-        {
-            Console.WriteLine("\nFunctionInvocationFilter");
-
-            Console.WriteLine(context.Function.PluginName);
-            Console.WriteLine(context.Function.Name);
-            
-            
-            await next(context);
-
-            Console.WriteLine("\n After FunctionInvocationFilter Executed");
-
         }
     }
 }
