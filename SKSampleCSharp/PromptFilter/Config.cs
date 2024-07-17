@@ -8,17 +8,17 @@
         /// <summary>
         /// Azure OpenAI deployment name
         /// </summary>
-        public static string DeploymentOrModelId => "youtube4o";
+        public static string DeploymentOrModelId => "";
 
         /// <summary>
         /// Azure OpenAI endpoint
         /// </summary>
-        public static string Endpoint => "https://openai-youtubedemo.openai.azure.com/";
+        public static string Endpoint => "";
 
         /// <summary>
         /// Azure OpenAI Key 
         /// </summary>
-        public static string ApiKey => "fd6ae1af67b44ba6a72164ea10fbc5eb";
+        public static string ApiKey => "";
 
         /// <summary>
         /// External API key for weather service
