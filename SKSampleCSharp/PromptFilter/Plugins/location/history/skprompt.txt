@@ -1,0 +1,2 @@
+﻿Initially, identify the city or location name within the provided input {{$input}}.
+Once the city or location name is identified, proceed to retrieve historical information.history information need only for 2 lines

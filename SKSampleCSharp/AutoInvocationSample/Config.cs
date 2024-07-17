@@ -1,4 +1,4 @@
-﻿namespace AutoFunctionCallingDemo
+﻿namespace AutoInvocationFilterSample
 {
     /// <summary>
     /// Configurations for Azure OpenAI Chat Completion service
@@ -8,7 +8,7 @@
         /// <summary>
         /// Azure OpenAI deployment name
         /// </summary>
-        public static string DeploymentOrModelId => "gpt4model";
+        public static string DeploymentOrModelId => "";
 
         /// <summary>
         /// Azure OpenAI endpoint
