@@ -8,7 +8,7 @@ namespace AutoInvocationFilterSample
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             Console.WriteLine("Hello, Microsoft Semantic Kernel - 1.0 - Kernel - AutoFunctionInvocation-Filters\n");
 
@@ -27,7 +27,7 @@ namespace AutoInvocationFilterSample
 
             var response = await chatService.GetChatMessageContentsAsync(chatHistory, settings, kernel);
 
-            if (response?.Count > 0)
+            if (response.Count > 0)
             {
                 Console.WriteLine(response[0].Content);
             }
@@ -48,7 +48,7 @@ namespace AutoInvocationFilterSample
             builder.Services.AddSingleton<IAutoFunctionInvocationFilter, AutoFunctionInvocationFilter>();
             builder.Services.AddSingleton<IFunctionInvocationFilter, FunctionInvocationFilter>();
 
-            return builder.Build()!;
+            return builder.Build();
         }
     }
 
