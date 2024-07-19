@@ -143,9 +143,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "35FunctionCalling", "35Func
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SKFunctionCalling", "SKFunctionCalling\SKFunctionCalling.csproj", "{546F1841-B574-43DC-8658-7E37C038B642}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingHelper", "FunctionCallingHelper\FunctionCallingHelper.csproj", "{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "36FunctionCallingHelper", "36FunctionCallingHelper", "{B80878C7-9EC6-4ED6-8397-5C36DFCF882E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionCallingHelper", "FunctionCallingHelper\FunctionCallingHelper.csproj", "{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "37FunctionStreaming", "37FunctionStreaming", "{36515B6F-371A-4B21-98F1-EA5F512892AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionCallingStreaming", "FunctionCallingStreaming\FunctionCallingStreaming.csproj", "{B64F5737-F6BF-406D-98CA-A0B8C7F1053B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -297,6 +301,10 @@ Global
 		{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{498742CA-EEAB-4476-B9A4-AAF8BC298EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64F5737-F6BF-406D-98CA-A0B8C7F1053B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64F5737-F6BF-406D-98CA-A0B8C7F1053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64F5737-F6BF-406D-98CA-A0B8C7F1053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64F5737-F6BF-406D-98CA-A0B8C7F1053B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -338,6 +346,7 @@ Global
 		{BAEC667C-BB61-4E8D-A186-80A49BA34D10} = {5A9913B9-0877-4EF3-B59D-CCE08C89A40E}
 		{546F1841-B574-43DC-8658-7E37C038B642} = {412CDA71-3E45-4576-9318-2FBC87ABFAC5}
 		{498742CA-EEAB-4476-B9A4-AAF8BC298EB3} = {B80878C7-9EC6-4ED6-8397-5C36DFCF882E}
+		{B64F5737-F6BF-406D-98CA-A0B8C7F1053B} = {36515B6F-371A-4B21-98F1-EA5F512892AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
