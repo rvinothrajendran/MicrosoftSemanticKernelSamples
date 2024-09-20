@@ -179,6 +179,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "44NewFunctionCalling", "44N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFunctionCalling", "NewFunctionCalling\AutoFunctionCalling.csproj", "{E653C60E-D59D-4221-B586-95F195F7C29D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredFunctionCalling", "RequiredFunctionCalling\RequiredFunctionCalling.csproj", "{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -361,6 +363,10 @@ Global
 		{E653C60E-D59D-4221-B586-95F195F7C29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E653C60E-D59D-4221-B586-95F195F7C29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E653C60E-D59D-4221-B586-95F195F7C29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -410,6 +416,7 @@ Global
 		{FD5B51F9-249D-424E-990E-DE7D32349DE0} = {DE21982E-CA53-4084-8954-A92F9B2BA87A}
 		{D78EE56F-92D1-413B-8F8C-5956529F3614} = {BD7E0A25-F333-4E85-B6C7-47E1C633E4CD}
 		{E653C60E-D59D-4221-B586-95F195F7C29D} = {E499E760-F25D-4617-B758-75E35DFCC230}
+		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166} = {E499E760-F25D-4617-B758-75E35DFCC230}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
