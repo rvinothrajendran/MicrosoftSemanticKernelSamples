@@ -183,6 +183,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredFunctionCalling", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoneFunctionCalling", "NoneFunctionCalling\NoneFunctionCalling.csproj", "{56564F1C-784D-4419-808F-C981FBA44F1A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "47ProcessFramework", "47ProcessFramework", "{18AB1444-491F-4310-8E05-A7378B06DD50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLibSample", "ProcessSample\ProcessLibSample.csproj", "{2A35E726-C226-4727-A606-3155E4E7AA35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -373,6 +377,10 @@ Global
 		{56564F1C-784D-4419-808F-C981FBA44F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56564F1C-784D-4419-808F-C981FBA44F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56564F1C-784D-4419-808F-C981FBA44F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A35E726-C226-4727-A606-3155E4E7AA35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A35E726-C226-4727-A606-3155E4E7AA35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A35E726-C226-4727-A606-3155E4E7AA35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A35E726-C226-4727-A606-3155E4E7AA35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -424,6 +432,7 @@ Global
 		{E653C60E-D59D-4221-B586-95F195F7C29D} = {E499E760-F25D-4617-B758-75E35DFCC230}
 		{68603C3A-6BAA-45A9-AF2A-9BA7BE2D3166} = {E499E760-F25D-4617-B758-75E35DFCC230}
 		{56564F1C-784D-4419-808F-C981FBA44F1A} = {E499E760-F25D-4617-B758-75E35DFCC230}
+		{2A35E726-C226-4727-A606-3155E4E7AA35} = {18AB1444-491F-4310-8E05-A7378B06DD50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
