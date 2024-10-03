@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;SKEXP0080</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;SKEXP0080</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AzureAI.Community.SK.Connector.GitHub.Models" Version="1.0.1" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.21.1" />
+    <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.21.1" />
+    <PackageReference Include="Microsoft.SemanticKernel.Process.Abstractions" Version="1.21.1-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Process.Core" Version="1.21.1-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Process.LocalRuntime" Version="1.21.1-alpha" />
+  </ItemGroup>
+
+</Project>
