@@ -11,6 +11,14 @@
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
 		<PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.11" />
 		<PackageReference Include="ModelContextProtocol.AspNetCore" Version="0.1.0-preview.11" />
+		<PackageReference Include="Microsoft.SemanticKernel" Version="1.53.1" />
+		<PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.54.0-alpha" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  
+	  <ProjectReference Include="..\..\..\ModelFactory\LLMModelFactory.csproj" />
+	  <ProjectReference Include="..\..\..\PluginsLibrary\ExtensionsLibrary.csproj" />
 	</ItemGroup>
 
 </Project>

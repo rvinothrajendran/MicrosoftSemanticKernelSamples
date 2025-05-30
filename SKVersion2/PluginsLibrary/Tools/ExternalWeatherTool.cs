@@ -1,7 +1,7 @@
-﻿using ModelContextProtocol.Server;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using ModelContextProtocol.Server;
 
-namespace LocalMCPServer.Tool;
+namespace ExtensionsLibrary.Tools;
 
 [McpServerToolType]
 public class ExternalWeatherTool
