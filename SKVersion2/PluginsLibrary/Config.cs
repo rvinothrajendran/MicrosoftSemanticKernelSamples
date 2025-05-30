@@ -1,4 +1,4 @@
-﻿namespace LocalMCPServer;
+﻿namespace ExtensionsLibrary;
 
 public static class Config
 {
