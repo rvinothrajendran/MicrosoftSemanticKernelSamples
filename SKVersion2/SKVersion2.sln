@@ -21,15 +21,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPServerSKPlugins", "MCP\S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AgentOrchestration", "AgentOrchestration", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialPattern", "SequentialPattern\SequentialPattern.csproj", "{A14C029E-5D53-49D6-B22C-ADC1BCA55D7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SequentialPattern", "AgentOrchestration\SequentialPattern\SequentialPattern.csproj", "{A14C029E-5D53-49D6-B22C-ADC1BCA55D7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsLibrary", "PluginsLibrary\ExtensionsLibrary.csproj", "{72C7ACBB-B7AE-4F53-9E31-2F20807D3F63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient", "MCP\SKPluginInMCPServer\MCPClient\MCPClient.csproj", "{13291765-78A7-4FF1-873F-CED60409DB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupPattern", "GroupPattern\GroupPattern.csproj", "{468927C1-B1D2-4435-BE5D-4BFC442375AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupPattern", "AgentOrchestration\GroupPattern\GroupPattern.csproj", "{468927C1-B1D2-4435-BE5D-4BFC442375AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLMModelFactory", "ModelFactory\LLMModelFactory.csproj", "{4CCFF7C7-5977-C953-83E0-13B4E2C8EBF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentPattern", "AgentOrchestration\ConcurrentPattern\ConcurrentPattern.csproj", "{7A900719-48E3-BCD6-8828-844F0069F098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{4CCFF7C7-5977-C953-83E0-13B4E2C8EBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCFF7C7-5977-C953-83E0-13B4E2C8EBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCFF7C7-5977-C953-83E0-13B4E2C8EBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A900719-48E3-BCD6-8828-844F0069F098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A900719-48E3-BCD6-8828-844F0069F098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A900719-48E3-BCD6-8828-844F0069F098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A900719-48E3-BCD6-8828-844F0069F098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{A14C029E-5D53-49D6-B22C-ADC1BCA55D7B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{13291765-78A7-4FF1-873F-CED60409DB6C} = {B9D23641-1D1A-4CA3-B36B-47C56321B8D9}
 		{468927C1-B1D2-4435-BE5D-4BFC442375AC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7A900719-48E3-BCD6-8828-844F0069F098} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73AAA6F8-CF13-49DE-92EB-70F19526BEB1}
