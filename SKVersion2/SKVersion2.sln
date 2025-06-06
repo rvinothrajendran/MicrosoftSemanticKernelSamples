@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPServer.Azure", "MCP\Azur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCPClient.Azure", "MCP\Azure\MCPClient.Azure\MCPClient.Azure.csproj", "{FDAFBC0A-E5CF-A16C-3409-0113E31DBBEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transform.AgentOrchestration", "AgentOrchestration\Transform.AgentOrchestration\Transform.AgentOrchestration.csproj", "{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{FDAFBC0A-E5CF-A16C-3409-0113E31DBBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAFBC0A-E5CF-A16C-3409-0113E31DBBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDAFBC0A-E5CF-A16C-3409-0113E31DBBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{A7A82586-92FF-4274-A444-259577F4C0F3} = {4D52153A-127D-40E9-89E7-15644915A9EF}
 		{E9779D2E-F7FC-57FE-D6D7-11FCED4805DF} = {A7A82586-92FF-4274-A444-259577F4C0F3}
 		{FDAFBC0A-E5CF-A16C-3409-0113E31DBBEA} = {A7A82586-92FF-4274-A444-259577F4C0F3}
+		{3A3673EB-D2DC-48BF-82D3-6A2A5E3D0008} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {73AAA6F8-CF13-49DE-92EB-70F19526BEB1}
