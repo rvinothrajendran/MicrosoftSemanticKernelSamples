@@ -191,6 +191,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "48LiquidPromptDemo", "48Liq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiquidPromptDemo", "LiquidPromptDemo\LiquidPromptDemo.csproj", "{25D749C5-2F16-45A6-83D4-3D2B1B24C4D4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "49AgentSamples", "49AgentSamples", "{8F9A7C3D-5E2F-4B6A-9D8E-1F2A3B4C5D6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentSamples", "AgentSamples\AgentSamples.csproj", "{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -389,6 +393,10 @@ Global
 		{25D749C5-2F16-45A6-83D4-3D2B1B24C4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25D749C5-2F16-45A6-83D4-3D2B1B24C4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25D749C5-2F16-45A6-83D4-3D2B1B24C4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -442,6 +450,7 @@ Global
 		{56564F1C-784D-4419-808F-C981FBA44F1A} = {E499E760-F25D-4617-B758-75E35DFCC230}
 		{2A35E726-C226-4727-A606-3155E4E7AA35} = {18AB1444-491F-4310-8E05-A7378B06DD50}
 		{25D749C5-2F16-45A6-83D4-3D2B1B24C4D4} = {46D916B0-B7DB-4415-98E7-98DEE86CF854}
+		{7B8C9D0E-6F1A-4C2B-8E3F-2A1B3C4D5E6F} = {8F9A7C3D-5E2F-4B6A-9D8E-1F2A3B4C5D6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {462A7F6A-B6BF-47DC-B781-E2C0D3556ABF}
