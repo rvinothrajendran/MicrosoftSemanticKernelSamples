@@ -52,6 +52,4 @@ namespace AgentSamples
             return kernelBuilder;
         }
     }
-
-    
 }
